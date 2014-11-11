@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><style>iframe{display:none}</style></head>
+<body>Redirecting...</body></html><script>
+var i=location.href.indexOf("?");
+if(i!=-1){
+var to=location.href.substr(i+1,location.href.length);
+document.body.appendChild(document.createElement('iframe')).src='javascript:"<script>top.location.replace(\''+to+'\')<\/script>"';
+}
+</script>
